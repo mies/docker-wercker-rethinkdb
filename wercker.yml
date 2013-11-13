@@ -11,3 +11,8 @@ build:
         code: |
           # Build the actual container with the Dockerfile (included in the repo)
           sudo docker build -t mies/rethinkdb .
+    - script:
+        name: list images
+        code: |
+          # List docker images, it should list the rethinkdb image
+          sudo docker images
