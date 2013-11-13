@@ -3,7 +3,11 @@ build:
   steps:
     - script:
         name: docker version
-        code: sudo docker version
+        code: |
+          # Simply print docker version
+          sudo docker version
     - script:
         name: docker build
-        code: sudo docker build -t mies/rethinkdb .
+        code: |
+          # Build the actual container with the Dockerfile (included in the repo)
+          sudo docker build -t mies/rethinkdb .
