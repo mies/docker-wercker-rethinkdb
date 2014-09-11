@@ -2,7 +2,7 @@ box: wercker-labs/docker
 build:
   steps:
     - script:
-        name: docker version
+        name: display docker version
         code: sudo docker version
     - script:
         name: docker build
